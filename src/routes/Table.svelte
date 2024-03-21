@@ -71,7 +71,7 @@
 			amount: 3830000,
 			currency: 'ZAR'
 		},
-    {
+		{
 			name: 'Gesie Van Zyl',
 			status: 'Claimed',
 			country: 'South Africa',
@@ -95,7 +95,15 @@
 		{#each winners as winner}
 			<TableBodyRow>
 				<TableBodyCell>{winner.name}</TableBodyCell>
-				<TableBodyCell>{winner.status}</TableBodyCell>
+				<TableBodyCell>
+					<div
+						class={`${winner.status === 'Claimed'
+							? 'bg-green-400 rounded-full px-2'
+							: 'bg-red-500 rounded-full px-2'} text-center text-white`}
+					>
+						{winner.status}
+					</div>
+				</TableBodyCell>
 				<TableBodyCell>{winner.country}</TableBodyCell>
 				<TableBodyCell>{winner.currency}{winner.amount}</TableBodyCell>
 			</TableBodyRow>
