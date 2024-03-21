@@ -43,7 +43,7 @@
 <footer class="bg-black p-8 text-white">
 	<div class="flex flex-col gap-4 items-center">
 		<nav>
-			<NavLinks className="flex gap-4 items-center list-none flex-wrap" links={[
+			<NavLinks className="flex gap-4 items-center list-none flex-wrap justify-center" links={[
 					{ name: 'Home', url: '/' },
 					{ name: 'About', url: '#about' },
 					{ name: 'GIF Winners List 2024', url: '#winners-list' },

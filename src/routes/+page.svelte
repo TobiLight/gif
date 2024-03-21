@@ -1,27 +1,9 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import imfHero from '../../public/images/imfc.webp';
-	import FinancialFreedom from '../../static/financialfreedom.svg';
 	import Meter from '$lib/components/icons/Meter.svelte';
 	import Table from './Table.svelte';
 
-	const images = [imfHero, FinancialFreedom];
+	let isLoading: boolean = false
 
-	let currentImage = 0;
-	let currImg = '';
-
-	const showImage = () => {
-		currImg = images[currentImage];
-		if (currentImage + 1 >= images.length) currentImage = 0;
-		else currentImage++;
-	};
-
-	onMount(() => {
-		const interv = setTimeout(() => {
-			showImage();
-		}, 500);
-		return () => clearInterval(interv);
-	});
 </script>
 
 <section id="#">
@@ -266,7 +248,14 @@
 			</div>
 		</div>
 		<div class="form w-full">
-			<form action="#" method="POST" class="w-full grid gap-6">
+			<form on:submit={e => {
+				e.preventDefault()
+				isLoading = true;
+
+				setTimeout(() => {
+					isLoading = false
+				}, 3000)
+			}} action="#" method="POST" class="w-full grid gap-6">
 				<div class="flex flex-col md:flex-row items-center gap-6 w-full">
 					<label for="name" class="w-full">
 						<input type="text" placeholder="Name" class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none" />
@@ -282,7 +271,7 @@
 					<textarea placeholder="Message" class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none" rows="4" cols="6"
 					></textarea>
 				</label>
-				<button class="bg-black p-4 rounded text-white text-lg">Send message</button>
+				<button disabled={isLoading} class={`${isLoading ? 'opacity-55' : ''} bg-black p-4 rounded text-white text-lg`}>{isLoading ? 'Please wait...' : 'Send message'}</button>
 			</form>
 		</div>
 	</div>
