@@ -181,8 +181,8 @@
 <section id="services" class="">
 	<div class="flex flex-col lg:flex-row w-full">
 		<div class="grid w-full bg-black text-white p-8">
-			<div class="grid gap-16 p-12">
-				<h1 class="text-8xl font-semibold">Services</h1>
+			<div class="grid gap-16 md:p-12">
+				<h1 class="text-5xl text-center md:text-left md:text-8xl font-semibold">Services</h1>
 				<div class="grid gap-4">
 					<p>
 						Global Innovation Fund with IMF Launches GOVERNMENT GRANTS , It's Regional Program
