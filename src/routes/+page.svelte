@@ -3,7 +3,7 @@
 	import imfHero from '../../public/images/imfc.webp';
 	import FinancialFreedom from '../../static/financialfreedom.svg';
 	import Meter from '$lib/components/icons/Meter.svelte';
-	import Table from "./Table.svelte"
+	import Table from './Table.svelte';
 
 	const images = [imfHero, FinancialFreedom];
 
@@ -177,7 +177,9 @@
 
 <section id="winners-list" class="pt-10 pb-20 border-t">
 	<h1 class="font-bold text-4xl text-center my-12">GIF WINNERS LIST 2024</h1>
-	<Table />
+	<div class="lg:w-2/3 mx-auto">
+		<Table />
+	</div>
 </section>
 
 <section id="services" class="">

@@ -13,22 +13,71 @@
 			status: 'Claimed',
 			country: 'USA',
 			amount: 860000,
-      currency: "$"
+			currency: '$'
 		},
-    {
-      name: 'Danie Du Toit',
+		{
+			name: 'Danie Du Toit',
 			status: 'Not Yet Claimed',
 			country: 'South Africa',
 			amount: 950000,
-      currency: "R"
-    },
-    {
-      name: 'Peter Frederick ',
+			currency: 'R'
+		},
+		{
+			name: 'Peter Frederick',
 			status: 'Not Yet Claimed',
 			country: 'South Africa',
 			amount: 2450000,
-      currency: "ZAR"
-    }
+			currency: 'ZAR'
+		},
+		{
+			name: 'Cathy Lorne Conklin',
+			status: 'Claimed',
+			country: 'South Africa',
+			amount: 350000,
+			currency: '$'
+		},
+		{
+			name: 'Rina Van derrick',
+			status: 'Claimed',
+			country: 'South Africa',
+			amount: 2790000,
+			currency: 'ZAR'
+		},
+		{
+			name: 'Laetitia Posthumus Brand',
+			status: 'Claimed',
+			country: 'South Africa',
+			amount: 2570000,
+			currency: 'ZAR'
+		},
+		{
+			name: 'Barend Frederik Hendrik',
+			status: 'Not Yet Claimed',
+			country: 'South Africa',
+			amount: 3370000,
+			currency: 'ZAR'
+		},
+		{
+			name: 'Willbard Van Wyk Ardeas',
+			status: 'Not Yet Claimed',
+			country: 'South Africa',
+			amount: 2350000,
+			currency: 'NAD'
+		},
+		{
+			name: 'Alet Botha',
+			status: 'Claimed',
+			country: 'South Africa',
+			amount: 3830000,
+			currency: 'ZAR'
+		},
+    {
+			name: 'Gesie Van Zyl',
+			status: 'Claimed',
+			country: 'South Africa',
+			amount: 3830000,
+			currency: 'NAD'
+		}
 	];
 </script>
 
