@@ -42,7 +42,7 @@
 	</div> -->
 	<div class="flex flex-col lg:flex-row items-stretch w-full">
 		<div
-			class="bg-[url('../../public/images/imfc.webp')] bg-ceter md:bg-top bg-cover bg-no-repeat h-auto w-full aspect-video relative home bg-[100%_50%] flex"
+			class="bg-[url('/imfc.webp')] bg-ceter md:bg-top bg-cover bg-no-repeat h-auto w-full aspect-video relative home bg-[100%_50%] flex"
 		>
 			<div
 				class="bg-[#0000006c] absolute top-0 left-0 z-[4] w-full h-full p-8 flex justify-center items-center"
@@ -179,7 +179,7 @@
 </section>
 
 <section id="services" class="">
-	<div class="flex flex-col md:flex-row w-full">
+	<div class="flex flex-col lg:flex-row w-full">
 		<div class="grid w-full bg-black text-white p-8">
 			<div class="grid gap-16 p-12">
 				<h1 class="text-8xl font-semibold">Services</h1>
