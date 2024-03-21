@@ -47,7 +47,7 @@
 			<div
 				class="bg-[#0000006c] absolute top-0 left-0 z-[4] w-full h-full p-8 flex justify-center items-center"
 			>
-				<div class="text-white text-center flex flex-col gap-4 items-center md:w-3/4">
+				<div class="text-white text-center flex flex-col gap-4 items-center md:w-4/5">
 					<h1 class="text-[calc(73*(100vw_/_1170))] md:text-5xl font-bold">
 						GLOBAL INNOVATION FUND
 					</h1>
