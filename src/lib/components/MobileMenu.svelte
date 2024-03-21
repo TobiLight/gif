@@ -12,8 +12,8 @@
 	<button on:click={() => mobileMenuOpen.set(false)}>
 		<Close class="text-4xl" />
 	</button>
-	<nav class="list-none grid justify-center mt-10 text-center text-xl font-bold gap-8">
-		<NavLinks
+	<nav class="list-none grid justify-center mt-10 text-center text-xl font-bold gap-16">
+		<NavLinks		
 			links={[
 				{ name: 'Home', url: '/' },
 				{ name: 'About', url: '#about' },
