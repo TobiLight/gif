@@ -12,70 +12,70 @@
 			name: 'Koekie Fergueson',
 			status: 'Claimed',
 			country: 'USA',
-			amount: 860000,
+			amount: "860,000",
 			currency: '$'
 		},
 		{
 			name: 'Danie Du Toit',
 			status: 'Not Yet Claimed',
 			country: 'South Africa',
-			amount: 950000,
+			amount: "950,000",
 			currency: 'R'
 		},
 		{
 			name: 'Peter Frederick',
 			status: 'Not Yet Claimed',
 			country: 'South Africa',
-			amount: 2450000,
+			amount: "2,450,000",
 			currency: 'ZAR'
 		},
 		{
 			name: 'Cathy Lorne Conklin',
 			status: 'Claimed',
 			country: 'South Africa',
-			amount: 350000,
+			amount: '350,000',
 			currency: '$'
 		},
 		{
 			name: 'Rina Van derrick',
 			status: 'Claimed',
 			country: 'South Africa',
-			amount: 2790000,
+			amount: "2,790,000",
 			currency: 'ZAR'
 		},
 		{
 			name: 'Laetitia Posthumus Brand',
 			status: 'Claimed',
 			country: 'South Africa',
-			amount: 2570000,
+			amount: "2,570,000",
 			currency: 'ZAR'
 		},
 		{
 			name: 'Barend Frederik Hendrik',
 			status: 'Not Yet Claimed',
 			country: 'South Africa',
-			amount: 3370000,
+			amount: "3,370,000",
 			currency: 'ZAR'
 		},
 		{
 			name: 'Willbard Van Wyk Ardeas',
 			status: 'Not Yet Claimed',
 			country: 'South Africa',
-			amount: 2350000,
+			amount: "2,350,000",
 			currency: 'NAD'
 		},
 		{
 			name: 'Alet Botha',
 			status: 'Claimed',
 			country: 'South Africa',
-			amount: 3830000,
+			amount: "3,830,000",
 			currency: 'ZAR'
 		},
 		{
 			name: 'Gesie Van Zyl',
 			status: 'Claimed',
 			country: 'South Africa',
-			amount: 3830000,
+			amount: "3,830,000",
 			currency: 'NAD'
 		}
 	];
