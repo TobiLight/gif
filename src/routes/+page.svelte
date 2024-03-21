@@ -180,34 +180,48 @@
 
 <section id="services" class="">
 	<div class="flex flex-col lg:flex-row w-full">
-		<div class="grid w-full bg-black text-white p-8">
-			<div class="grid gap-16 md:p-12">
-				<h1 class="text-5xl text-center md:text-left md:text-8xl font-semibold">Services</h1>
-				<div class="grid gap-4">
-					<p>
-						Global Innovation Fund with IMF Launches GOVERNMENT GRANTS , It's Regional Program
-						Serving whole worldwide. Local livelihoods are not just about income, but rather
-						economic independence. A form of resistance to boom-and-bust development and the
-						dehumanization of indigenous communities and cultures. We partner with and support
-						financial aid to senior citizens, semi-retired retired, veterans, citizens with
-						disabilities, farmers, fisher folk, beekeepers, and artisans and invest in diverse local
-						economies that are committed to restoring the environment, establishing a fair wage, and
-						showing great resilience in the face of hardship and disaster.
-					</p>
-					<p>
-						A grant is an award of financial assistance in the form of money which is being issued
-						by the government to help increase the growth of the economy and the citizen. Anyone can
-						apply as long as you are a senior citizen and you have never applied for any type of
-						grant before. *Global Innovation Fund finds and funds innovators, transform the lives of
-						people living sub-standard living. *GIF and the Global Innovation Fund logo are
-						registered trademarks of Global Innovation Fund. Global Innovation Fund is a registered
-						charity (number 1171353) company. *GIF takes a zero-tolerance approach to bribery and
-						corruption in our activities or in any program or projects that we support.
-					</p>
+		<div class="grid w-full">
+			<div class="lg:hdden flex">
+				<div class="bg-green-400 h-1 w-full"></div>
+				<div class="bg-red-400 h-1 w-full"></div>
+				<div class="bg-yellow-400 h-1 w-full"></div>
+			</div>
+			<div class="grid w-full bg-black text-white p-8">
+				<div class="grid gap-16 md:p-12">
+					<h1 class="text-5xl text-center md:text-left md:text-8xl font-semibold">Services</h1>
+					<div class="grid gap-4">
+						<p>
+							Global Innovation Fund with IMF Launches GOVERNMENT GRANTS , It's Regional Program
+							Serving whole worldwide. Local livelihoods are not just about income, but rather
+							economic independence. A form of resistance to boom-and-bust development and the
+							dehumanization of indigenous communities and cultures. We partner with and support
+							financial aid to senior citizens, semi-retired retired, veterans, citizens with
+							disabilities, farmers, fisher folk, beekeepers, and artisans and invest in diverse
+							local economies that are committed to restoring the environment, establishing a fair
+							wage, and showing great resilience in the face of hardship and disaster.
+						</p>
+						<p>
+							A grant is an award of financial assistance in the form of money which is being issued
+							by the government to help increase the growth of the economy and the citizen. Anyone
+							can apply as long as you are a senior citizen and you have never applied for any type
+							of grant before. *Global Innovation Fund finds and funds innovators, transform the
+							lives of people living sub-standard living. *GIF and the Global Innovation Fund logo
+							are registered trademarks of Global Innovation Fund. Global Innovation Fund is a
+							registered charity (number 1171353) company. *GIF takes a zero-tolerance approach to
+							bribery and corruption in our activities or in any program or projects that we
+							support.
+						</p>
+					</div>
 				</div>
 			</div>
+			<div class="lg:hdden flex">
+				<div class="bg-green-400 h-1 w-full"></div>
+				<div class="bg-red-400 h-1 w-full"></div>
+				<div class="bg-yellow-400 h-1 w-full"></div>
+			</div>
 		</div>
-		<div class="p-4 bg-red-500 w-full"></div>
+
+		<div class="hidden lg:block p-4 bg-red-500 w-full"></div>
 	</div>
 </section>
 
