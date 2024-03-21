@@ -267,19 +267,19 @@
 		</div>
 		<div class="form w-full">
 			<form action="#" method="POST" class="w-full grid gap-6">
-				<div class="flex items-center gap-6 w-full">
+				<div class="flex flex-col md:flex-row items-center gap-6 w-full">
 					<label for="name" class="w-full">
-						<input type="text" placeholder="Name" class="bg-gray-200 rounded p-4 w-full" />
+						<input type="text" placeholder="Name" class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none" />
 					</label>
 					<label for="phone" class="w-full">
-						<input type="phone" placeholder="Phone" class="bg-gray-200 rounded p-4 w-full" />
+						<input type="phone" placeholder="Phone" class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none" />
 					</label>
 				</div>
 				<label for="email">
-					<input type="email" placeholder="Email address" class="bg-gray-200 rounded p-4 w-full" />
+					<input type="email" placeholder="Email address" class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none" />
 				</label>
 				<label for="message">
-					<textarea placeholder="Message" class="bg-gray-200 rounded p-4 w-full" rows="4" cols="6"
+					<textarea placeholder="Message" class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none" rows="4" cols="6"
 					></textarea>
 				</label>
 				<button class="bg-black p-4 rounded text-white text-lg">Send message</button>
