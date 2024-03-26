@@ -326,9 +326,10 @@
 
 				<label for="drivers-license">
 					<span class="text-lg font-semibold"> Driver's License </span>
-					<div class="w-full mt-6">
-						<div
-							class="border-4 border-dashed w-10/12 mx-auto md:w-full p-10 border-gray-500 md:text-2xl text-center text-gray-400"
+					<div class="w-full md:mt-6">
+						<input type="file" name="drivers-license" accept="image/*" id="drivers-license" class="w-full hidden">
+						<div id="drivers-license"
+							class="border-4 border-dashed w-10/12 mx-auto md:w-full p-10 border-gray-300 hover:border-gray-500 md:text-2xl text-center text-gray-400"
 						>
 							<p class="text-4xl md:text-6xl">+</p>
 							<p>Click here to add an image</p>
