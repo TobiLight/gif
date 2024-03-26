@@ -30,7 +30,7 @@
 					{ name: 'Home', url: '/' },
 					{ name: 'About', url: '#about' },
 					{ name: 'GIF Winners List 2024', url: '#winners-list' },
-					{ name: 'Services', url: '#services' },
+					// { name: 'Services', url: '#services' },
 					{ name: 'Contact', url: '#contact' }
 				]}
 			/>

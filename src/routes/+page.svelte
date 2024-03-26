@@ -1,9 +1,33 @@
 <script lang="ts">
 	import Meter from '$lib/components/icons/Meter.svelte';
+	import Location from '$lib/components/icons/Location.svelte';
+	import Phone from '$lib/components/icons/Phone.svelte';
+	import Envelop from '$lib/components/icons/Envelop.svelte';
 	import Table from './Table.svelte';
 
-	let isLoading: boolean = false
+	let isLoading: boolean = false;
 
+	const about = [
+		{
+			id: 1,
+			title: 'National Community Grant',
+			content:
+				'Since 1993, NCG has been one of the leading organizations in the world supporting grassroots-led efforts to protect the planet and the rights of people. Together with our diverse community of people on the frontlines and our supporters, we’ve impacted the lives of millions of people.'
+		},
+		{
+			id: 2,
+			title: 'What is NCG Program?',
+			content:
+				'National Community Grant is a charitable foundation that makes small grants (typically $100,000 to $5,000,000) to grassroots environmental causes around the world.'
+		},
+		{
+			id: 3,
+			title: 'Mission & Vision',
+			content: ''
+		}
+	];
+
+	const currentAbout = { title: about[0].title, content: about[0].content };
 </script>
 
 <section id="#">
@@ -25,14 +49,14 @@
 	</div> -->
 	<div class="flex flex-col lg:flex-row items-stretch w-full">
 		<div
-			class="bg-[url('/imfc.webp')] bg-ceter md:bg-top bg-cover bg-no-repeat h-auto w-full aspect-video relative home bg-[100%_50%] flex"
+			class="bg-[url('/imfc.webp')] md:bg-top bg-cover bg-no-repeat h-auto w-full aspect-video relative home bg-[100%_50%] flex"
 		>
 			<div
 				class="bg-[#0000006c] absolute top-0 left-0 z-[4] w-full h-full p-8 flex justify-center items-center"
 			>
 				<div class="text-white text-center flex flex-col gap-4 items-center md:w-4/5">
 					<h1 class="text-[calc(73*(100vw_/_1170))] md:text-5xl font-bold">
-						GLOBAL INNOVATION FUND
+						NATIONAL COMMUNITY GRANT
 					</h1>
 					<p class="text-[calc(73*(100vw_/_2040))] sm:text-[calc(43*(100vw_/_1570))] md:text-xl">
 						Creative solutions, creative results. We value honesty, transparency, empathy,
@@ -43,7 +67,10 @@
 		</div>
 		<div class="flex flex-col lg:grid grid-rows-2 w-full">
 			<div class="bg-gray-100 p-14 text-4xl md:grid md:items-center">
-				<p>Federal Government with IMF Launches GIF, CFDA, and GOVERNMENT GRANTS</p>
+				<p>
+					NCG - Awarding International Monetary funds for the Retired, Semi retired, Old, Disable,
+					Deaf, Widow, Divorced and Workers
+				</p>
 			</div>
 			<div class="grid md:grid-cols-2 items-stretch">
 				<div>
@@ -52,8 +79,8 @@
 					>
 						<Meter class="text-6xl text-gray-400" />
 						<div class="grid gap-4 mt-6">
-							<h1 class="font-semibold text-4xl">Simplify your organization</h1>
-							<p class="text-gray-500">Mauris tempus nisl vitae magna pulvinar laoreet nillum.</p>
+							<h1 class="font-semibold text-4xl">International Monetary funds</h1>
+							<p class="text-gray-500">NCG Keeps impacting the lives of millions of people.</p>
 						</div>
 					</div>
 				</div>
@@ -61,15 +88,17 @@
 				<div
 					class="bg-blue-500 pt-36 md:pt-16 pb-14 px-4 flex flex-col gap-6 justify-end text-gray-100"
 				>
-					<h2 class="text-4xl font-semibold">"Understanding the buyer & the process of sale."</h2>
-					<p>Jullian Mayer, CEO</p>
+					<h2 class="text-3xl font-semibold">
+						​Achieving global environmental justice, rooted in cultural integrity, led by
+						communities and grassroots movements.
+					</h2>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section id="about" class="overflow-hidden">
+<section class="overflow-hidden">
 	<!-- <div class="flex flex-col lg:flex-row gap-6 lg:gap-14 md:items-center md:justify-between">
 		<div class="flex flex-col max-w-[900px] w-full">
 			<div class="flex flex-col gap-4 text-center lg:text-left lg:gap-6">
@@ -99,17 +128,16 @@
 			<!-- <img src={'/financialfreedom1.svg'} alt="GIF Hero" class="w-full h-full object-over flex-1" /> -->
 			<div class="p-8 flex flex-col gap-4">
 				<p>
-					Local livelihoods are not just about income, but rather economic independence—a form of
-					resistance to boom-and-bust development and the dehumanization of indigenous communities
-					and cultures. We partner with farmers, fisher folk, beekeepers, and artisans and invest in
-					diverse local economies that are committed to restoring the environment, establishing a
-					fair wage, and showing great resilience in the face of hardship and disaster.
+					Since 1993, National Community Grant has been one of the leading organizations in the
+					world supporting grassroots-led efforts to protect the planet and the rights of people.
+					Together with our diverse community of people on the frontlines and our supporters, we’ve
+					impacted the lives of millions of people.
 				</p>
 				<p>
-					A grant is an award of financial assistance in the form of money which is been issued by
-					the government to help increase the growth of the economy and the citizen. Anyone can
-					apply as long as they are citizens and you have never applied for any type of grant
-					before.
+					National Community Grant is different from other international organizations in that we
+					don’t try to dictate an agenda from afar. Instead, we trust local people to advance
+					solutions and strategies that will best fit their needs, providing them the resources to
+					make their ideas a reality.
 				</p>
 			</div>
 			<!-- <div
@@ -127,11 +155,18 @@
 			</div> -->
 		</div>
 		<div class="flex flex-col lg:grid grid-row-2 w-full items-stretch">
-			<div class="bg-gray-100 p-14 text-3xl font-bold md:grid md:items-center">
+			<div class="bg-gray-100 p-14 text-3xl font-bold grid md:grid md:items-center gap-6 md:gap-0">
 				<h2 class="text-center">
-					Federal Government with IMF Launches GIF, CFDA, and GOVERNMENT GRANTS, It's a regional
-					program serving the whole worldwide
+					National Community Grant is a charitable foundation that makes small grants (typically
+					$100,000 to $5,000,000) to grassroots environmental causes around the world.
 				</h2>
+				<div class="mx-auto">
+					<a
+						href="/about"
+						class="px-4 text-white bg-black rounded hover:bg-transparent hover:text-black border border-transparent hover:border-black"
+						>Read more</a
+					>
+				</div>
 			</div>
 			<!-- <div class="grid md:grid-cols-2 items-stretch">
 				<div>
@@ -157,15 +192,22 @@
 	</div>
 </section>
 
-<section id="winners-list" class="pt-10 pb-20 border-t">
+<section id="winners-list" class="pt-10 pb-20 border-t overflow-hidden">
 	<h1 class="font-bold text-4xl text-center my-12">GIF WINNERS LIST 2024</h1>
-	<div class="lg:w-2/3 mx-auto">
+	<div class="w-11/12 lg:w-2/3 mx-auto">
 		<Table />
+		<div class="mx-auto text-center text-lg font-semibold mt-8">
+			<a
+				href="/winners-list"
+				class="rounded-full px-4 py-2 text-white bg-black hover:bg-transparent hover:text-black border border-transparent hover:border-black"
+				>See full list</a
+			>
+		</div>
 	</div>
 </section>
 
-<section id="services" class="">
-	<div class="flex flex-col lg:flex-row w-full">
+<section id="about" class="">
+	<div class="flex flex-col lg:flex-row lg:w-10/12 mx-auto p-4 bg-blue-500 rounded-md">
 		<div class="grid w-full">
 			<div class="lg:hdden flex">
 				<div class="bg-green-400 h-1 w-full"></div>
@@ -174,29 +216,45 @@
 			</div>
 			<div class="grid w-full bg-black text-white p-8">
 				<div class="grid gap-16 md:p-12">
-					<h1 class="text-5xl text-center md:text-left md:text-8xl font-semibold">Services</h1>
-					<div class="grid gap-4">
-						<p>
-							Global Innovation Fund with IMF Launches GOVERNMENT GRANTS , It's Regional Program
-							Serving whole worldwide. Local livelihoods are not just about income, but rather
-							economic independence. A form of resistance to boom-and-bust development and the
-							dehumanization of indigenous communities and cultures. We partner with and support
-							financial aid to senior citizens, semi-retired retired, veterans, citizens with
-							disabilities, farmers, fisher folk, beekeepers, and artisans and invest in diverse
-							local economies that are committed to restoring the environment, establishing a fair
-							wage, and showing great resilience in the face of hardship and disaster.
-						</p>
-						<p>
-							A grant is an award of financial assistance in the form of money which is being issued
-							by the government to help increase the growth of the economy and the citizen. Anyone
-							can apply as long as you are a senior citizen and you have never applied for any type
-							of grant before. *Global Innovation Fund finds and funds innovators, transform the
-							lives of people living sub-standard living. *GIF and the Global Innovation Fund logo
-							are registered trademarks of Global Innovation Fund. Global Innovation Fund is a
-							registered charity (number 1171353) company. *GIF takes a zero-tolerance approach to
-							bribery and corruption in our activities or in any program or projects that we
-							support.
-						</p>
+					<div class="bg-gray-900 p-3 rounded">
+						<div class="grid md:grid-cols-3 gap-4 text-center font-semibold">
+							{#each about as aboutInfo}
+								<button
+									on:click={(e) => {
+										currentAbout.title = aboutInfo.title;
+										currentAbout.content = aboutInfo.content;
+									}}
+									class="bg-green-400 py-4 rounded"
+								>
+									<h1>{aboutInfo.title}</h1>
+								</button>
+							{/each}
+						</div>
+					</div>
+					<h1 class="text-5xl text-center md:text-left md:text-5xl font-semibold">
+						{currentAbout.title}
+					</h1>
+					<div class="flex flex-col gap-8">
+						{#if currentAbout.title.includes('Mission & Vision')}
+							<div class="flex flex-col gap-1">
+								<h1 class="text-xl font-bold underline">Mission</h1>
+								<p>
+									National Community Grant mobilizes resources for communities worldwide to protect
+									our shared planet and work toward a more equitable world.
+								</p>
+							</div>
+							<div class="flex flex-col gap-1">
+								<h1 class="text-xl font-bold underline">Vision</h1>
+								<p>
+									​Achieving global environmental justice, rooted in cultural integrity, led by
+									communities and grassroots movements.
+								</p>
+							</div>
+						{:else}
+							<p>
+								{currentAbout.content}
+							</p>
+						{/if}
 					</div>
 				</div>
 			</div>
@@ -207,72 +265,84 @@
 			</div>
 		</div>
 
-		<div class="hidden lg:block p-4 bg-red-500 w-full"></div>
+		<!-- <div class="hidden lg:block p-4 bg-red-500 w-full"></div> -->
 	</div>
 </section>
 
-<section id="contact" class="p-6 overflow-hidden w-full">
+<section id="contact" class="overflow-hidden w-full">
 	<h1 class="font-bold text-4xl text-center my-12">CONTACT</h1>
 
-	<div class="grid gap-8 lg:gap-0 lg:flex">
-		<div class="flex flex-col justify-center items-center text-center gap-4">
-			<ul class="list-none text-sm">
-				<li>United States</li>
-				<li>1201 Connecticut Ave NW Suite 600 Washington, DC 20036</li>
-			</ul>
-
-			<ul class="text-sm mb-10 grid gap-5">
-				<li>+1-6464447323 - Senior Claims Agent</li>
-				<li>+1-6464447323 - Senior Claims Agent</li>
-				<li>6464447323 - Senior Claims Agent</li>
-				<li>globalinnovationfund.claims.agent@financier.com</li>
-				<li>Sunday 10:00AM - 3:00PM</li>
-				<li>Monday 8:00AM - 6:00PM</li>
-				<li>Tuesday 8:00AM - 6:00PM</li>
-				<li>Wednesday 8:00AM - 6:00PM</li>
-				<li>Thursday 8:00AM - 6:00PM</li>
-				<li>Friday 8:00AM - 6:00PM</li>
-				<li>Saturday 8:00AM - 6:00PM</li>
-			</ul>
-
-			<div class="w-1/2 mx-auto">
-				<p>
-					*Global Innovation Fund finds and funds innovators, transform the lives of people living
-					sub-standard living.
-				</p>
-				<p>
-					*GIF and the Global Innovation Fund logo are registered trademarks of Global Innovation
-					Fund. Global Innovation Fund is a registered charity (number 1171353) company.
-				</p>
-				<p>*GIF takes a zero-toler</p>
-			</div>
-		</div>
+	<div class="grid gap-8 lg:gap-0 lg:flex w-5/6 md:w-3/4 lg:w-1/2 mx-auto">
 		<div class="form w-full">
-			<form on:submit={e => {
-				e.preventDefault()
-				isLoading = true;
+			<form
+				on:submit={(e) => {
+					e.preventDefault();
+					isLoading = true;
 
-				setTimeout(() => {
-					isLoading = false
-				}, 3000)
-			}} action="#" method="POST" class="w-full grid gap-6">
+					setTimeout(() => {
+						isLoading = false;
+					}, 3000);
+				}}
+				action="#"
+				method="POST"
+				class="w-full grid gap-6"
+			>
 				<div class="flex flex-col md:flex-row items-center gap-6 w-full">
 					<label for="name" class="w-full">
-						<input type="text" placeholder="Name" class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none" />
+						<input
+							type="text"
+							placeholder="Name"
+							class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none"
+						/>
 					</label>
 					<label for="phone" class="w-full">
-						<input type="phone" placeholder="Phone" class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none" />
+						<input
+							type="phone"
+							placeholder="Phone"
+							class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none"
+						/>
 					</label>
 				</div>
 				<label for="email">
-					<input type="email" placeholder="Email address" class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none" />
+					<input
+						type="email"
+						placeholder="Email address"
+						class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none"
+					/>
 				</label>
 				<label for="message">
-					<textarea placeholder="Message" class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none" rows="4" cols="6"
+					<textarea
+						placeholder="Message"
+						class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none"
+						rows="4"
+						cols="6"
 					></textarea>
 				</label>
-				<button disabled={isLoading} class={`${isLoading ? 'opacity-55' : ''} bg-black p-4 rounded text-white text-lg`}>{isLoading ? 'Please wait...' : 'Send message'}</button>
+				<button
+					disabled={isLoading}
+					class={`${isLoading ? 'opacity-55' : ''} bg-black p-4 rounded text-white text-lg`}
+					>{isLoading ? 'Please wait...' : 'Send message'}</button
+				>
 			</form>
+		</div>
+	</div>
+
+	<div class="bg-[url('/Africa.jpg')] bg-top bg-no-repeat text-lg text-white relative flex mt-10">
+		<div
+			class="w-full h-full justify-center grid lg:grid-cols-3 bg-[#0000006c] relative p-8 items-stretch"
+		>
+			<div class="p-4 text-center">
+				<Location class="mx-auto text-4xl" />
+				<p>Head Office: 2840 Wilderness Place, Suite A Boulder, CO 80301. USA​</p>
+			</div>
+			<div class="p-4 text-center">
+				<Phone class="mx-auto text-4xl" />
+				<p>USA HQ No: +1(223) 228-2889 South Africa No: +27(6o)633-6340</p>
+			</div>
+			<div class="p-4 text-center">
+				<Envelop class="mx-auto text-4xl" />
+				<p>nationalcommunitygrant@safrica.com fiona.ncg@safrica.com</p>
+			</div>
 		</div>
 	</div>
 </section>

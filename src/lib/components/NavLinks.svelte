@@ -7,7 +7,7 @@
 <ul class={className ?? ""}>
 	{#each links as link}
 		<li>
-			<a href={link.url} on:click={() => mobileMenuOpen.set(false)}>{link.name}</a>
+			<a data-sveltekit-reload  href={`${link.url ==='/' ? `/` : `/${link.url}`}`} on:click={() => mobileMenuOpen.set(false)}>{link.name}</a>
 		</li>
 	{/each}
 </ul>

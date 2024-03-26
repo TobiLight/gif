@@ -1,7 +1,7 @@
 <script lang="ts">
-	import {mobileMenuOpen} from "../../stores/store"
-	import NavLinks from "./NavLinks.svelte";
-	import Close from "./icons/Close.svelte";
+	import { mobileMenuOpen } from '../../stores/store';
+	import NavLinks from './NavLinks.svelte';
+	import Close from './icons/Close.svelte';
 </script>
 
 <div
@@ -14,12 +14,12 @@
 	</button>
 	<nav class="list-none grid justify-center mt-10 text-center text-xl font-bold">
 		<NavLinks
-		className="grid gap-8"		
+			className="grid gap-8"
 			links={[
 				{ name: 'Home', url: '/' },
 				{ name: 'About', url: '#about' },
 				{ name: 'GIF Winners List 2024', url: '#winners-list' },
-				{ name: 'Services', url: '#services' },
+				// { name: 'Services', url: '#services' },
 				{ name: 'Contact', url: '#contact' }
 			]}
 		/>

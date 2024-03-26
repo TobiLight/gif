@@ -94,7 +94,12 @@
 	<TableBody tableBodyClass="divide-y">
 		{#each winners as winner}
 			<TableBodyRow>
-				<TableBodyCell>{winner.name}</TableBodyCell>
+				<TableBodyCell tdClass="flex items-center gap-2 whitespace-nowrap">
+					<span class="rounded-full bg-gray-200 shadow-inner w-8 h-8 md:w-10 md:h-10 relative">
+						
+					</span>
+					{winner.name}
+				</TableBodyCell>
 				<TableBodyCell>
 					<div
 						class={`${winner.status === 'Claimed'
