@@ -326,11 +326,11 @@
 
 				<label for="drivers-license">
 					<span class="text-lg font-semibold"> Driver's License </span>
-					<div class="w-full">
+					<div class="w-full mt-6">
 						<div
-							class="border-4 border-dashed w-full p-10 border-gray-500 text-2xl text-center text-gray-400"
+							class="border-4 border-dashed w-10/12 mx-auto md:w-full p-10 border-gray-500 md:text-2xl text-center text-gray-400"
 						>
-							<p class="text-6xl">+</p>
+							<p class="text-4xl md:text-6xl">+</p>
 							<p>Click here to add an image</p>
 						</div>
 					</div>
