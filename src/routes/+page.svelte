@@ -289,6 +289,7 @@
 			>
 				<div class="flex flex-col md:flex-row items-center gap-6 w-full">
 					<label for="name" class="w-full">
+						<span class="text-lg font-semibold">Name</span>
 						<input
 							type="text"
 							placeholder="Name"
@@ -296,6 +297,7 @@
 						/>
 					</label>
 					<label for="phone" class="w-full">
+						<span class="text-lg font-semibold"> Phone No </span>
 						<input
 							type="phone"
 							placeholder="Phone"
@@ -303,14 +305,38 @@
 						/>
 					</label>
 				</div>
-				<label for="email">
-					<input
-						type="email"
-						placeholder="Email address"
-						class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none"
-					/>
+				<div class="flex flex-col md:flex-row items-center gap-6 w-full">
+					<label for="email" class="w-full">
+						<span class="text-lg font-semibold"> Email </span>
+						<input
+							type="email"
+							placeholder="Email address"
+							class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none"
+						/>
+					</label>
+					<label for="age">
+						<span class="text-lg font-semibold"> Age </span>
+						<input
+							type="number"
+							placeholder="Age"
+							class="bg-gray-200 rounded p-4 focus-within:ring-0 border-none"
+						/>
+					</label>
+				</div>
+
+				<label for="drivers-license">
+					<span class="text-lg font-semibold"> Driver's License </span>
+					<div class="w-full">
+						<div
+							class="border-4 border-dashed w-full p-10 border-gray-500 text-2xl text-center text-gray-400"
+						>
+							<p class="text-6xl">+</p>
+							<p>Click here to add an image</p>
+						</div>
+					</div>
 				</label>
 				<label for="message">
+					<span class="text-lg font-semibold"> Message </span>
 					<textarea
 						placeholder="Message"
 						class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none"
