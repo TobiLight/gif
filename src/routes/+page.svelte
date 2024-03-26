@@ -314,12 +314,12 @@
 							class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none"
 						/>
 					</label>
-					<label for="age">
-						<span class="text-lg font-semibold"> Age </span>
+					<label for="age" class="w-full md:w-auto">
+						<span class="text-lg font-semibold">Age</span>
 						<input
 							type="number"
 							placeholder="Age"
-							class="bg-gray-200 rounded p-4 focus-within:ring-0 border-none"
+							class="bg-gray-200 rounded p-4 w-full focus-within:ring-0 border-none"
 						/>
 					</label>
 				</div>
