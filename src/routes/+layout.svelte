@@ -47,12 +47,12 @@
 					{ name: 'Home', url: '/' },
 					{ name: 'About', url: '#about' },
 					{ name: 'GIF Winners List 2024', url: '#winners-list' },
-					{ name: 'Services', url: '#services' },
+					// { name: 'Services', url: '#services' },
 					{ name: 'Contact', url: '#contact' }
 				]} />
 		</nav>
 		<div>
-			<h1>GLOBAL INNOVATION FUND</h1>
+			<h1>National Community Grant</h1>
 			<p class="text-xs">Copyright © 2024 All rights reserved</p>
 		</div>
 	</div>
